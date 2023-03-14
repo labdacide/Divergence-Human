@@ -1,0 +1,124 @@
+@import 'styles/_functions';
+
+.features {
+  height: 800vh;
+
+  @include desktop {
+    min-height: desktop-vw(1310px);
+  }
+
+  .card {
+    position: absolute;
+    // transition-duration: 600ms;
+    // transition-property: opacity, transform;
+    // transition-timing-function: var(--ease-out-expo);
+
+    // @debug var(--progress) % var(--i);
+    --p: calc(1 - var(--progress));
+    --t: calc(var(--p) * 100%);
+    transform: translate3d(var(--t), var(--t), 0);
+    opacity: var(--progress);
+
+    @include mobile {
+      @for $i from 0 through 9 {
+        &:nth-child(#{$i + 1}) {
+          top: calc(
+            ((90vh - #{mobile-vw(440px)} - (1 * var(--layout-margin))) / 4) * $i
+          );
+        }
+      }
+    }
+
+    @include desktop {
+      @for $i from 0 through 9 {
+        &:nth-child(#{$i + 1}) {
+          top: calc(
+            ((100vh - #{desktop-vw(440px)} - (2 * var(--layout-margin))) / 4) *
+              $i
+          );
+          left: calc(
+            ((100vw - #{desktop-vw(440px)} - (2 * var(--layout-margin))) / 4) *
+              $i
+          );
+        }
+      }
+    }
+
+    // &:not(.reset) {
+    //   transform: translate3d(50%, 50%, 0);
+    //   opacity: 0;
+    // }
+  }
+
+  .title {
+    text-align: end;
+    padding-bottom: var(--layout-margin);
+
+    @include desktop {
+      padding: 0;
+      position: absolute;
+      right: var(--layout-margin);
+    }
+  }
+}
+
+.sticky {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: var(--layout-margin);
+
+  @include desktop {
+  }
+
+  > * {
+    position: relative;
+  }
+}
+.modal {
+  font-size: 12px;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+.example img {
+  width: 100%;
+  position: relative;
+}
+
+.example .overlay {
+  position: absolute;
+  top: 80px;
+  right: 15px;
+  font-weight: bold;
+  text-align: right;
+  font-size: 30px;
+}

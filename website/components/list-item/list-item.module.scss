@@ -1,0 +1,112 @@
+@import 'styles/_functions';
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--grey);
+  padding: mobile-vw(16px) 0;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme-contrast);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 600ms var(--ease-out-expo);
+  }
+
+  @include mobile {
+    flex-direction: column;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  @include desktop {
+    align-items: center;
+    padding: desktop-vw(16px) 0;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    transition: transform 600ms var(--ease-out-expo);
+    will-change: transform;
+
+    .text {
+      font-weight: 500;
+      line-height: 100%;
+      font-size: mobile-vw(20px);
+      letter-spacing: -0.03em;
+
+      @include mobile {
+        margin-bottom: mobile-vw(8px);
+      }
+
+      @include desktop {
+        line-height: 114%;
+        font-size: desktop-vw(28px);
+      }
+    }
+
+    .arrow {
+      aspect-ratio: 1 / 1;
+      margin-left: auto;
+      width: mobile-vw(19px);
+
+      @include desktop {
+        transform: translate(-20%, 20%);
+        opacity: 0;
+        margin-left: desktop-vw(24px);
+        width: desktop-vw(19px);
+      }
+    }
+  }
+
+  .source {
+    font-weight: 700;
+    transition: transform 600ms var(--ease-out-expo);
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    font-size: mobile-vw(20px);
+    will-change: transform;
+
+    @include desktop {
+      text-align: end;
+      line-height: 114%;
+      font-size: desktop-vw(28px);
+    }
+  }
+
+  @include hover {
+    &:hover {
+      &::before {
+        transform: scaleY(1);
+        transform-origin: bottom;
+      }
+
+      .title {
+        transform: translateX(desktop-vw(16px));
+
+        .arrow {
+          transition: opacity 600ms var(--ease-out-expo),
+            transform 600ms var(--ease-out-expo);
+          opacity: 1;
+          transform: translate(0, 0);
+          transition-delay: 100ms;
+        }
+      }
+
+      .source {
+        transform: translateX(desktop-vw(-16px));
+      }
+    }
+  }
+}

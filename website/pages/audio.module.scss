@@ -1,0 +1,17 @@
+@import 'styles/_functions';
+
+/*.audio::-webkit-media-controls-play-button,
+.audio::-webkit-media-controls-timeline,
+.audio::-webkit-media-controls-current-time-display,
+.audio::-webkit-media-controls-time-remaining-display{
+  display: none;
+}*/
+.audio::-webkit-media-controls-panel{
+  visibility: hidden;
+}
+.audio::-webkit-media-controls-mute-button,
+.audio::-webkit-media-controls-play-button,{
+  visibility: visible;
+  background-color: #00ffae;
+  border-radius: 50%;
+}
