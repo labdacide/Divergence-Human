@@ -31,7 +31,7 @@ const vid = {
 }
 
 const Discord = dynamic(() => import('icons/discord.svg'), { ssr: false })
-// const GitHub = dynamic(() => import('icons/github.svg'), { ssr: false })
+const GitHub = dynamic(() => import('icons/github.svg'), { ssr: false })
 
 const WebGL = dynamic(
   () => import('components/webgl').then(({ WebGL }) => WebGL),
