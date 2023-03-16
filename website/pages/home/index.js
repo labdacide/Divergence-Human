@@ -195,14 +195,14 @@ export default function Home() {
           >
             Join us on discord
           </Button>
-          {/* <Button
+          <Button
             className={cn(s.cta2, introOut && s.in)}
             arrow
-            icon={<GitHub fill="#FFFFFF" />}
-            href="https://login.coinbase.com/signin?login_challenge=2d6c26cdf7a64eb7bce9d2271d686d09"
+            icon={<Github fill="#FFFFFF" />}
+            href="https://divergentemblems.wlbl.xyz/"
           >
-            Connect you walle
-          </Button> */}
+            Get My Divergent Emblem
+          </Button>
         </div>
       </section>
       <section className={s.why}>
