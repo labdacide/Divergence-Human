@@ -198,7 +198,7 @@ export default function Home() {
           <Button
             className={cn(s.cta2, introOut && s.in)}
             arrow
-            icon={<Github fill="#FFFFFF" />}
+            icon={<GitHub fill="#FFFFFF" />}
             href="https://divergentemblems.wlbl.xyz/"
           >
             Get My Divergent Emblem
