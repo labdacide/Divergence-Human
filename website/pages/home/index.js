@@ -201,7 +201,7 @@ export default function Home() {
             icon={<GitHub fill="#FFFFFF" />}
             href="https://divergentemblems.wlbl.xyz/"
           >
-            Get My Divergent Emblem
+            Get My NFT Emblem
           </Button>
         </div>
       </section>
