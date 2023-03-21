@@ -409,7 +409,7 @@ export default function Home() {
               <ListItem
                 title="Elias El Manouzi"
                 source="3D Designer"
-                href="#"
+                href="#Elias El Manouzi"
               />
             </li>
             <li>
@@ -423,7 +423,7 @@ export default function Home() {
               <ListItem
                 title="Maxime Nottin"
                 source="Lead Moderator "
-                href="#"
+                href="#Maxime Nottin"
               />
             </li>
             <li>
