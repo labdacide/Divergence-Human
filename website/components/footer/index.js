@@ -83,12 +83,12 @@ export const Footer = () => {
             Discord
           </Link> */}
         </div>
-         <p className={cn('p-xs', s.tm)}>
+        <p className={cn('p-xs', s.tm)}>
           Developed by <a href="https://www.linkedin.com/in/houssem-lachtar/">Houssem.L</a>
         </p>
-        /*<p className={cn('p-xs', s.tm)}>
+        {/*<p className={cn('p-xs', s.tm)}>
           <span>©</span> {new Date().getFullYear()} Human Divergence
-        </p>*/
+        </p>*/}
          <Button
           className={cn(s.cta, 'hide-on-desktop')}
           arrow
