@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 import s from './footer.module.scss'
 
 const Discord = dynamic(() => import('icons/discord.svg'), { ssr: false })
-// const GitHub = dynamic(() => import('icons/github.svg'), { ssr: false })
+
 
 export const Footer = () => {
   
