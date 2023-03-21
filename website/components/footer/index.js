@@ -3,11 +3,8 @@ import { Button } from 'components/button'
 import { Link } from 'components/link'
 import dynamic from 'next/dynamic'
 import s from './footer.module.scss'
-
 const Discord = dynamic(() => import('icons/discord.svg'), { ssr: false })
 // const GitHub = dynamic(() => import('icons/github.svg'), { ssr: false })
-
-
 export const Footer = () => {
   
   return (
@@ -84,12 +81,9 @@ export const Footer = () => {
             Discord
           </Link> */}
         </div>
-        <p className={cn('p-xs', s.tm)}>
-          Developed by <a href="https://www.linkedin.com/in/houssem-lachtar/">Houssem.L</a>
-        </p>
-        {/*<p className={cn('p-xs', s.tm)}>
+         <p className={cn('p-xs', s.tm)}>
           <span>©</span> {new Date().getFullYear()} Human Divergence
-        </p>*/}
+         </p>
          <Button
           className={cn(s.cta, 'hide-on-desktop')}
           arrow
