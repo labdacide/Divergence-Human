@@ -85,7 +85,7 @@ export const Footer = () => {
         </div>
          <p className={cn('p-xs', s.tm)}>
           Developed by <a href="https://www.linkedin.com/in/houssem-lachtar/">Houssem.L</a>
-          //<span>©</span> {new Date().getFullYear()} Human Divergence
+          /*<span>©</span> {new Date().getFullYear()} Human Divergence*/
         </p>
          <Button
           className={cn(s.cta, 'hide-on-desktop')}
