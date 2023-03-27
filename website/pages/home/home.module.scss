@@ -145,7 +145,7 @@ $intro-duration: 2050ms;
         }
       }
       &::before {
-        content: ‘’;
+        content: '';
         position: absolute;
         left: 0;
         top: 0;
@@ -310,7 +310,7 @@ $intro-duration: 2050ms;
     overflow: hidden;
     height: 100vh;
     &::after {
-      content: ‘’;
+      content: '';
       background-color: currentColor;
       position: absolute;
       height: 100%;
