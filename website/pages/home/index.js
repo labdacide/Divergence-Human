@@ -172,7 +172,7 @@ export default function Home() {
             className={cn(s.cta2, introOut && s.in)}
             arrow
             icon={<GitHub fill="#FFFFFF" />}
-            href="https://divergentemblems.wlbl.xyz/"
+            href="https://humandivergence-marketplace.com/"
           >
             Get My NFT Emblem
           </Button>
