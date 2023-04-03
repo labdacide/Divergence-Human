@@ -359,13 +359,6 @@ export default function Home() {
             </li>
             <li>
               <ListItem
-                title="Khaled Grira"
-                source="Blockchain Developer"
-                href="https://www.linkedin.com/in/khaled-grira-math/"
-              />
-            </li> 
-            <li>
-              <ListItem
                 title="Gael Gao"
                 source="Artistic Director"
                 href="https://gaelgaoart.com"
