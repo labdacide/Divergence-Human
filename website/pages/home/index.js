@@ -158,7 +158,7 @@ export default function Home() {
           </div>
           <h1 className={cn(s.description, 'p-s')}>
             <HeroTextIn introOut={introOut}>
-              <p className="p-s"> AN IMMERSIVE ROLE-PLAYING GAME USING BLOCKCHAIN TECHNOLOGY WITH A FUTURISTIC UNIVERSE CO-DESIGNED WITH THE COMMUNITY</p>
+              <p className="p-s"> THE FIRST CROSS-MEDIA COMMUNITY-POWERED ENTERTAINMENT COMPANY IN THE WEB3 INDUSTRY" </p>
             </HeroTextIn>
           </h1>
           <Button
