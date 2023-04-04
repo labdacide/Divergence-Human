@@ -235,7 +235,24 @@ $intro-duration: 2050ms;
       }
     }
     .cta2 {
-      grid-column: 11/14;
+      grid-column: 10/13;
+      /*text-align: end;*/
+
+      &.in {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+
+      @include desktop {
+        transition: transform calc($intro-duration - 200ms) var(--ease-out-expo),
+          opacity $intro-duration var(--ease-out-expo);
+        /*grid-column: 2 / 3;*/
+        opacity: 0.5;
+        transform: translate3d(0, 100%, 0);
+      }
+    } 
+    .cta3 {
+      grid-column: 13/16;
       /*text-align: end;*/
 
       &.in {
