@@ -252,7 +252,7 @@ $intro-duration: 2050ms;
       }
     } 
     .cta3 {
-      grid-column: 13/16;
+      grid-column: 13/-1;
       /*text-align: end;*/
 
       &.in {
