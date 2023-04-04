@@ -178,7 +178,7 @@ export default function Home() {
             Get My NFT Emblem
           </Button>
           <Button
-            className={cn(s.cta, introOut && s.in)}
+            className={cn(s.cta3, introOut && s.in)}
             arrow
             icon={<Book fill="#FFFFFF" />}
             href="https://www.humandivergence-comics.com/"
