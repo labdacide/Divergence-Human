@@ -28,6 +28,7 @@ const vid = {
 }
 const Discord = dynamic(() => import('icons/discord.svg'), { ssr: false })
 const GitHub = dynamic(() => import('icons/github.svg'), { ssr: false })
+const Book = dynamic(() => import('icons/book.svg'), { ssr: false })
 const WebGL = dynamic(
   () => import('components/webgl').then(({ WebGL }) => WebGL),
   { ssr: false }
@@ -179,7 +180,7 @@ export default function Home() {
           <Button
             className={cn(s.cta, introOut && s.in)}
             arrow
-            icon={<Discord fill="#FFFFFF" />}
+            icon={<Book fill="#FFFFFF" />}
             href="https://www.humandivergence-comics.com/"
           >
             Read the full manga
