@@ -158,7 +158,7 @@ export default function Home() {
           </div>
           <h1 className={cn(s.description, 'p-s')}>
             <HeroTextIn introOut={introOut}>
-              <p className="p-s"> THE FIRST CROSS-MEDIA COMMUNITY-POWERED ENTERTAINMENT COMPANY IN THE WEB3 INDUSTRY" </p>
+              <p className="p-s"> THE FIRST CROSS-MEDIA COMMUNITY-POWERED ENTERTAINMENT COMPANY IN THE WEB3 INDUSTRY </p>
             </HeroTextIn>
           </h1>
           <Button
@@ -265,7 +265,7 @@ export default function Home() {
                 >
                   Divergents
                 </Link>
-                . Through gaming, manga, films, collectables, and apparel, they
+                Through gaming, manga, films, collectables, and apparel, they
                 are the key to unlocking a variety of exciting options. There
                 are five distinct factions, all with their own unique world,
                 backgrounds, abilities, and traits. What will you choose?
