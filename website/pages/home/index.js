@@ -176,6 +176,14 @@ export default function Home() {
           >
             Get My NFT Emblem
           </Button>
+          <Button
+            className={cn(s.cta, introOut && s.in)}
+            arrow
+            icon={<Discord fill="#FFFFFF" />}
+            href="https://www.humandivergence-comics.com/"
+          >
+            Read the full manga
+          </Button>
         </div>
       </section>
       <section className={s.why}>
