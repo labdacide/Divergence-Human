@@ -218,7 +218,7 @@ $intro-duration: 2050ms;
     }
 
     .cta {
-      grid-column: 10/-11;    /*    10 / -11    */
+      /*grid-column: 2/-11;      10 / -11    */
       /*text-align: end;*/
 
       &.in {
@@ -229,13 +229,13 @@ $intro-duration: 2050ms;
       @include desktop {
         transition: transform calc($intro-duration - 200ms) var(--ease-out-expo),
           opacity $intro-duration var(--ease-out-expo);
-        grid-column: 2 / span 2; /* 7 / -4     */
+        /* grid-column: 3 / span 3; 7 / -4     */
         opacity: 0.5;
         transform: translate3d(0, 100%, 0);
       }
     }
     .cta2 {
-      grid-column: 10 / -11;
+      /*grid-column: 10 / -11;*/
       /*text-align: end;*/
 
       &.in {
@@ -246,7 +246,7 @@ $intro-duration: 2050ms;
       @include desktop {
         transition: transform calc($intro-duration - 200ms) var(--ease-out-expo),
           opacity $intro-duration var(--ease-out-expo);
-        grid-column: 2 / 3;
+        /*grid-column: 2 / 3;*/
         opacity: 0.5;
         transform: translate3d(0, 100%, 0);
       }
