@@ -229,7 +229,7 @@ $intro-duration: 2050ms;
       @include desktop {
         transition: transform calc($intro-duration - 200ms) var(--ease-out-expo),
           opacity $intro-duration var(--ease-out-expo);
-        grid-column: 1 / -1; /* 7 / -4     */
+        grid-column: 2 / 3; /* 7 / -4     */
         opacity: 0.5;
         transform: translate3d(0, 100%, 0);
       }
@@ -246,7 +246,7 @@ $intro-duration: 2050ms;
       @include desktop {
         transition: transform calc($intro-duration - 200ms) var(--ease-out-expo),
           opacity $intro-duration var(--ease-out-expo);
-        grid-column: 1 / -1;
+        grid-column: 2 / 3;
         opacity: 0.5;
         transform: translate3d(0, 100%, 0);
       }
