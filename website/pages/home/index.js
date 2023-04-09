@@ -33,18 +33,6 @@ const WebGL = dynamic(
   () => import('components/webgl').then(({ WebGL }) => WebGL),
   { ssr: false }
 )
-async function connect() {
-    try {
-      if (window.ethereum) {
-       await window.ethereum.request({ method: "eth_requestAccounts" });
-       window.web3 = new Web3(window.ethereum);
-     } else {
-       console.log("No wallet");
-     }
-  } catch (error) {
-    console.error(error);
-  }
- }
 const HeroTextIn = ({ children, introOut }) => {
   return (
     <div className={cn(s['hide-text'], introOut && s['show-text'])}>
@@ -197,7 +185,6 @@ export default function Home() {
           >
             Read the full manga
           </Button>
-          <input type="button" value="Connect Wallet" onClick={connect} />
         </div>
       </section>
       <section className={s.why}>
