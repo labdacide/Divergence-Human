@@ -128,6 +128,7 @@ export default function Home() {
     >
       <div className={s.canvas}>
         <WebGL />
+        <ConnectWallet accentColor="#ff005f" colorMode="dark" />
       </div>
       <section className={s.hero}>
         <div className="layout-grid-inner">
@@ -190,7 +191,6 @@ export default function Home() {
           >
             Read the full manga
           </Button>
-          <ConnectWallet accentColor="#f213a4" colorMode="dark" />
         </div>
       </section>
       <section className={s.why}>
