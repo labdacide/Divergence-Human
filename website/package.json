@@ -45,7 +45,8 @@
     "use-dark-mode": "^2.3.1",
     "radium": "^0.26.2",
     "zustand": "4.1.1",
-    "web3": "^1.6.0"
+    "web3": "^1.6.0",
+    "ethers": "^5.4.4" 
   },
   "devDependencies": {
     "@builder.io/partytown": "^0.7.0",
