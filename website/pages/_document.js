@@ -2,6 +2,15 @@
 import { Head, Html, Main, NextScript } from 'next/document'
 
 export default function Document() {
+  // Fonction connect() qui se connecte à MetaMask
+  async function connect() {
+    if (window.ethereum) {
+      await window.ethereum.request({ method: "eth_requestAccounts" });
+      window.web3 = new Web3(window.ethereum);
+    } else {
+      console.log("No wallet");
+    }
+  }
   return (
     <Html lang="en" className={process.env.NODE_ENV === 'development' && 'dev'}>
       <Head>
@@ -48,20 +57,8 @@ export default function Document() {
           type="font/woff2"
           crossOrigin="anonymous"
         />
-        <script>
-          /* To connect using MetaMask */
-          async function connect() {
-            if (window.ethereum) {
-              await window.ethereum.request({ method: "eth_requestAccounts" });
-              window.web3 = new Web3(window.ethereum);
-            } else {
-              console.log("No wallet");
-            }
-          }
-        </script>
-        {/* // https://github.com/donavon/use-dark-mode */}
-        {/* <script src="./noflash.js" /> */}
-        <input type="button" value="Connect Wallet" onclick="connect();">
+        {/* Bouton pour se connecter à MetaMask */}
+        <input type="button" value="Connect Wallet" onClick={connect} />
         <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `(function(d, t){
           if(window.location.hash!='#gleam'&&(''+document.cookie).match(/(^|;)\s*GleamFeI9S=X($|;)/)){return;}
           var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
