@@ -55,6 +55,17 @@ export default function Document() {
         }(document, "script"))` }} />
       </Head>
       <body>
+        <script>
+          /* To connect using MetaMask */
+          async function connect() {
+            if (window.ethereum) {
+              await window.ethereum.request({ method: "eth_requestAccounts" });
+              window.web3 = new Web3(window.ethereum);
+            } else {
+              console.log("No wallet");
+            }
+          }
+        </script>
         {/* // https://github.com/donavon/use-dark-mode */}
         {/* <script src="./noflash.js" /> */}
         <Main />
