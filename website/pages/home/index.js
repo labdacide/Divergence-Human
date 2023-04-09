@@ -18,7 +18,6 @@ import { useEffect, useRef, useState } from 'react'
 import { useWindowSize } from 'react-use'
 import s from './home.module.scss'
 import { Story } from 'components/feature-cards2'
-import Web3 from 'web3'
 const center = {
   textAlign: 'center',
 }
@@ -174,8 +173,6 @@ export default function Home() {
               <p className="p-s"> THE FIRST CROSS-MEDIA COMMUNITY-POWERED ENTERTAINMENT COMPANY IN THE WEB3 INDUSTRY </p>
             </HeroTextIn>
           </h1>
-          {/* Bouton pour se connecter à MetaMask */}
-          <input type="button" value="Connect Wallet" onClick={connect} />
           <Button
             className={cn(s.cta, introOut && s.in)}
             arrow
@@ -200,6 +197,7 @@ export default function Home() {
           >
             Read the full manga
           </Button>
+          <input type="button" value="Connect Wallet" onClick={connect} />
         </div>
       </section>
       <section className={s.why}>
