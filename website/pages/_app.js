@@ -9,6 +9,7 @@ import dynamic from 'next/dynamic'
 import Script from 'next/script'
 import 'styles/global.scss'
 import React, { useState, useEffect } from 'react';
+import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 
 const bt = {
   width:'24px',
@@ -45,6 +46,10 @@ const GridDebugger = dynamic(
 const Leva = dynamic(() => import('leva').then(({ Leva }) => Leva), {
   ssr: false,
 })
+
+
+// This is the chainId your dApp will work on.
+const activeChainId = ChainId.Goerli;
 
 function MyApp({ Component, pageProps }) {
   const [muted, setMuted] = useState(true);
@@ -138,8 +143,11 @@ function MyApp({ Component, pageProps }) {
            )}
         </button>
         <audio id="audio" src="https://houssemlachtar.github.io/Wavy-Sounds/The%20Blaze-Territory.mp3" loop={true} autoPlay={true}></audio>
+        
     </div>
+    <ThirdwebProvider desiredChainId={activeChainId}>
       <Component {...pageProps} />
+    </ThirdwebProvider>
     </>
   )
 }
