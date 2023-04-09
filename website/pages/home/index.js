@@ -19,7 +19,6 @@ import { useWindowSize } from 'react-use'
 import s from './home.module.scss'
 import { Story } from 'components/feature-cards2'
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
-import { ConnectWallet } from "@thirdweb-dev/react";
 
 const center = {
   textAlign: 'center',
@@ -43,15 +42,6 @@ const HeroTextIn = ({ children, introOut }) => {
       {children}
     </div>
   )
-}
-
-function MyApp({ Component, pageProps }) {
-  const activeChainId = ChainId.Goerli;
-  return (
-    <ThirdwebProvider desiredChainId={activeChainId}>
-      <Component {...pageProps} />
-    </ThirdwebProvider>
-  );
 }
 
 export default function Home() {
