@@ -18,6 +18,9 @@ import { useEffect, useRef, useState } from 'react'
 import { useWindowSize } from 'react-use'
 import s from './home.module.scss'
 import { Story } from 'components/feature-cards2'
+import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
+import { ConnectWallet } from "@thirdweb-dev/react";
+
 const center = {
   textAlign: 'center',
 }
@@ -33,6 +36,7 @@ const WebGL = dynamic(
   () => import('components/webgl').then(({ WebGL }) => WebGL),
   { ssr: false }
 )
+
 const HeroTextIn = ({ children, introOut }) => {
   return (
     <div className={cn(s['hide-text'], introOut && s['show-text'])}>
@@ -40,6 +44,16 @@ const HeroTextIn = ({ children, introOut }) => {
     </div>
   )
 }
+
+function MyApp({ Component, pageProps }) {
+  const activeChainId = ChainId.Goerli;
+  return (
+    <ThirdwebProvider desiredChainId={activeChainId}>
+      <Component {...pageProps} />
+    </ThirdwebProvider>
+  );
+}
+
 export default function Home() {
   const [hasScrolled, setHasScrolled] = useState()
   const zoomRef = useRef(null)
@@ -65,6 +79,7 @@ export default function Home() {
       zoomRef.current.style.removeProperty('background-color')
     }
   })
+
   const [whyRectRef, whyRect] = useRect()
   const [cardsRectRef, cardsRect] = useRect()
   const [whiteRectRef, whiteRect] = useRect()
@@ -185,6 +200,7 @@ export default function Home() {
           >
             Read the full manga
           </Button>
+          <ConnectWallet accentColor="#f213a4" colorMode="dark" />
         </div>
       </section>
       <section className={s.why}>
