@@ -47,7 +47,8 @@
     "zustand": "4.1.1",
     "web3": "^1.6.0",
     "ethers": "^5.4.4",
-    "@thirdweb-dev/react": "^1.0.0"
+    "@thirdweb-dev/react": "^1.0.0",
+    "@thirdweb-dev/sdk": "^1.0.0"
   },
   "devDependencies": {
     "@builder.io/partytown": "^0.7.0",
