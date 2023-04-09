@@ -161,12 +161,11 @@ export default function Home() {
               <p className="p-s"> THE FIRST CROSS-MEDIA COMMUNITY-POWERED ENTERTAINMENT COMPANY IN THE WEB3 INDUSTRY </p>
             </HeroTextIn>
           </h1>
-          (function(d, t){
           if(window.location.hash!='#gleam'&&(''+document.cookie).match(/(^|;)\s*GleamFeI9S=X($|;)/)){return;}
-
-          var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-          g.src = "https://widget.gleamjs.io/FeI9S/ol.js"; s.parentNode.insertBefore(g, s);
-          }(document, "script"));
+          var g = document.createElement('script');
+          g.src = "https://widget.gleamjs.io/FeI9S/ol.js";
+          g.async = true;
+          document.getElementsByTagName('head')[0].appendChild(g);
           <Button
             className={cn(s.cta, introOut && s.in)}
             arrow
