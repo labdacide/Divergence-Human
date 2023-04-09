@@ -18,7 +18,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useWindowSize } from 'react-use'
 import s from './home.module.scss'
 import { Story } from 'components/feature-cards2'
-import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
+import { ConnectWallet } from "@thirdweb-dev/react";
 
 const center = {
   textAlign: 'center',
