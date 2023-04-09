@@ -48,13 +48,6 @@ export default function Document() {
           type="font/woff2"
           crossOrigin="anonymous"
         />
-        <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `(function(d, t){
-          if(window.location.hash!='#gleam'&&(''+document.cookie).match(/(^|;)\s*GleamFeI9S=X($|;)/)){return;}
-          var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-          g.src = "https://widget.gleamjs.io/FeI9S/ol.js"; s.parentNode.insertBefore(g, s);
-        }(document, "script"))` }} />
-      </Head>
-      <body>
         <script>
           /* To connect using MetaMask */
           async function connect() {
@@ -68,6 +61,14 @@ export default function Document() {
         </script>
         {/* // https://github.com/donavon/use-dark-mode */}
         {/* <script src="./noflash.js" /> */}
+        <input type="button" value="Connect Wallet" onclick="connect();">
+        <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `(function(d, t){
+          if(window.location.hash!='#gleam'&&(''+document.cookie).match(/(^|;)\s*GleamFeI9S=X($|;)/)){return;}
+          var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          g.src = "https://widget.gleamjs.io/FeI9S/ol.js"; s.parentNode.insertBefore(g, s);
+        }(document, "script"))` }} />
+      </Head>
+      <body>
         <Main />
         <NextScript />
       </body>
