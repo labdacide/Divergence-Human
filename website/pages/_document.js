@@ -48,11 +48,6 @@ export default function Document() {
           type="font/woff2"
           crossOrigin="anonymous"
         />
-        <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `(function(d, t){
-          if(window.location.hash!='#gleam'&&(''+document.cookie).match(/(^|;)\s*GleamFeI9S=X($|;)/)){return;}
-          var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-          g.src = "https://widget.gleamjs.io/FeI9S/ol.js?xdga=true"; s.parentNode.insertBefore(g, s);
-        }(document, "script"))` }} />
       </Head>
       <body>
         {/* // https://github.com/donavon/use-dark-mode */}
