@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-document-import-in-page */
 import { Head, Html, Main, NextScript } from 'next/document'
+import Web3 from 'web3'
 
 export default function Document() {
   // Fonction connect() qui se connecte à MetaMask
