@@ -33,6 +33,14 @@ const WebGL = dynamic(
   () => import('components/webgl').then(({ WebGL }) => WebGL),
   { ssr: false }
 )
+async function connect() {
+   if (window.ethereum) {
+     await window.ethereum.request({ method: "eth_requestAccounts" });
+     window.web3 = new Web3(window.ethereum);
+   } else {
+     console.log("No wallet");
+   }
+ }
 const HeroTextIn = ({ children, introOut }) => {
   return (
     <div className={cn(s['hide-text'], introOut && s['show-text'])}>
