@@ -139,10 +139,10 @@ export default function Home() {
             <HeroTextIn introOut={introOut}>
               <h2 className={cn('p-xs', s.tm)}>
                 <span>©</span> {new Date().getFullYear()} Human Divergence
+                <ConnectWallet accentColor="#00ffae" colorMode="#ff005f" />
               </h2>
             </HeroTextIn>
           </span>
-        <ConnectWallet accentColor="#00ffae" colorMode="#ff005f" />
         </div>
         <div className={cn(s.bottom, 'layout-grid')}>
           <div
