@@ -141,8 +141,8 @@ export default function Home() {
                 <span>©</span> {new Date().getFullYear()} Human Divergence
               </h2>
             </HeroTextIn>
-            <ConnectWallet accentColor="#00ffae" colorMode="#ff005f" />
           </span>
+        <ConnectWallet accentColor="#00ffae" colorMode="#ff005f" />
         </div>
         <div className={cn(s.bottom, 'layout-grid')}>
           <div
