@@ -131,10 +131,11 @@ export default function Home() {
       </div>
       <section className={s.hero}>
         <div className="layout-grid-inner">
+          <ConnectWallet accentColor="#ff005f" colorMode="dark" />
           <Title className={s.title} />
           <span className={cn(s.sub)}>
+          <ConnectWallet accentColor="#ff005f" colorMode="dark" />               
             <HeroTextIn introOut={introOut}>
-              <ConnectWallet accentColor="#ff005f" colorMode="dark" />
               <h2 className={cn('h3', s.subtitle)}>Play Beyond <br /> The Game</h2>
             </HeroTextIn>
             <HeroTextIn introOut={introOut}>
