@@ -135,11 +135,11 @@ export default function Home() {
           <span className={cn(s.sub)}>               
             <HeroTextIn introOut={introOut}>
               <h2 className={cn('h3', s.subtitle)}>Play Beyond <br /> The Game</h2>
-              <ConnectWallet accentColor="#00ffae" colorMode="#ff005f" />
             </HeroTextIn>
             <HeroTextIn introOut={introOut}>
               <h2 className={cn('p-xs', s.tm)}>
                 <span>©</span> {new Date().getFullYear()} Human Divergence
+                <ConnectWallet accentColor="#00ffae" colorMode="#ff005f" />
               </h2>
             </HeroTextIn>
           </span>
