@@ -128,13 +128,13 @@ export default function Home() {
     >
       <div className={s.canvas}>
         <WebGL />
-        <ConnectWallet accentColor="#ff005f" colorMode="dark" />
       </div>
       <section className={s.hero}>
         <div className="layout-grid-inner">
           <Title className={s.title} />
           <span className={cn(s.sub)}>
             <HeroTextIn introOut={introOut}>
+              <ConnectWallet accentColor="#ff005f" colorMode="dark" />
               <h2 className={cn('h3', s.subtitle)}>Play Beyond <br /> The Game</h2>
             </HeroTextIn>
             <HeroTextIn introOut={introOut}>
