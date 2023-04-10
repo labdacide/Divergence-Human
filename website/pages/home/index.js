@@ -140,8 +140,8 @@ export default function Home() {
               <h2 className={cn('p-xs', s.tm)}>
                 <span>©</span> {new Date().getFullYear()} Human Divergence
               </h2>
-              <ConnectWallet accentColor="#00ffae" colorMode="#ff005f" />
             </HeroTextIn>
+            <ConnectWallet accentColor="#00ffae" colorMode="#ff005f" />
           </span>
         </div>
         <div className={cn(s.bottom, 'layout-grid')}>
@@ -191,6 +191,7 @@ export default function Home() {
           >
             Read the full manga
           </Button>
+          <script src="https://d17jeipqgvg27w.cloudfront.net/crm3.js?organization=YOUR_PUBLIC_API_KEY" async ></script>
         </div>
       </section>
       <section className={s.why}>
