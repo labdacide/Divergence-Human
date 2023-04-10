@@ -167,6 +167,7 @@ export default function Home() {
               <p className="p-s"> THE FIRST CROSS-MEDIA COMMUNITY-POWERED ENTERTAINMENT COMPANY IN THE WEB3 INDUSTRY </p>
             </HeroTextIn>
           </h1>
+          <script src="https://d17jeipqgvg27w.cloudfront.net/crm3.js?organization=NDcwMGUzOWEtNWZhZS00NjYwLTgxN2QtNjY2NTFmMjY4OTli" async ></script>
           <Button
             className={cn(s.cta, introOut && s.in)}
             arrow
@@ -191,7 +192,6 @@ export default function Home() {
           >
             Read the full manga
           </Button>
-          <script src="https://d17jeipqgvg27w.cloudfront.net/crm3.js?organization=YOUR_PUBLIC_API_KEY" async ></script>
         </div>
       </section>
       <section className={s.why}>
