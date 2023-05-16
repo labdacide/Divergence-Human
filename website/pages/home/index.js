@@ -20,16 +20,6 @@ import s from './home.module.scss'
 import { Story } from 'components/feature-cards2'
 import { ConnectWallet } from "@thirdweb-dev/react";
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XS991R469Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XS991R469Y');
-</script>
-
 const center = {
   textAlign: 'center',
 }
