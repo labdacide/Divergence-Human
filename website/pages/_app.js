@@ -115,7 +115,11 @@ function MyApp({ Component, pageProps }) {
             async
             strategy="worker"
             src={`https://www.googletagmanager.com/gtag/js?id=${GTM_ID}`}
-            src="https://api.thx.network/v1/widget/6494501998ed500d59223a50.js"
+          />
+          <Script
+            async
+            strategy="worker"
+            src="https://api.thx.network/v1/widget/6494501998ed500d59223a50.js">
           />
           <Script
             id="gtm-base"
