@@ -118,8 +118,7 @@ function MyApp({ Component, pageProps }) {
           />
           <Script
             async
-            strategy="worker"
-            src="https://api.thx.network/v1/widget/6494501998ed500d59223a50.js"
+            src={https://api.thx.network/v1/widget/6494501998ed500d59223a50.js}
           />
           <Script
             id="gtm-base"
