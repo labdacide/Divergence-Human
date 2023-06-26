@@ -256,6 +256,7 @@ $intro-duration: 2050ms;
       /*text-align: end;*/
 
       &.in {
+        color: #00FFAE;
         opacity: 1;
         transform: translate3d(0, 0, 0);
       }
