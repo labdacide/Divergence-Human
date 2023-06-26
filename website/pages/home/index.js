@@ -172,7 +172,7 @@ export default function Home() {
             className={cn(s.cta, introOut && s.in)}
             arrow
             icon={<Discord fill="#FFFFFF" />}
-            href="https://discord.com/invite/human-divergence"
+            href="https://discord.gg/human-divergence"
           >
             Join us on discord
           </Button>
@@ -180,9 +180,9 @@ export default function Home() {
             className={cn(s.cta2, introOut && s.in)}
             arrow
             icon={<GitHub fill="#FFFFFF" />}
-            href="https://humandivergence-marketplace.com/"
+            href="https://mint.humandivergence.com/"
           >
-            Get My NFT Emblem
+            Get My NFT Divergent - MINT LIVE
           </Button>
           <Button
             className={cn(s.cta3, introOut && s.in)}
