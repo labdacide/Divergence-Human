@@ -182,7 +182,7 @@ export default function Home() {
             icon={<GitHub fill="#FFFFFF" />}
             href="https://mint.humandivergence.com/"
           >
-            Get My NFT Divergent - MINT LIVE
+            MINT LIVE
           </Button>
           <Button
             className={cn(s.cta3, introOut && s.in)}
